@@ -46,7 +46,7 @@ Please write your solution in a language you feel confident in, provided there
 is an easy option to build it and run it on macOS/Linux.
 
 Please take your time to come up with a solution you like. We appreciate people
-have day jobs and other commitments,so please let us know if you need more
+have day jobs and other commitments, so please let us know if you need more
 time!
 
 Please do not publish your solution, for example on your blog or source control

@@ -1,4 +1,10 @@
-# Code challenge
+# Code Challenge
+
+You have received this challenge as part of the recruiting process for HSBC. The contents of this exercise are confidential, so please do not distribute.
+
+You have 7 days to complete this challenge but it shouldn't take you longer than a few hours. Please send it back as soon as you're done.
+
+## Description
 
 Build a simple social networking application, similar to Twitter, and
 expose it through a web API. The application should support the scenarios
@@ -8,7 +14,7 @@ below.
 
 ### Posting
 
-A user should be able to post a 140 characters message.
+A user should be able to post a 140 character message.
 
 ### Wall
 
@@ -45,9 +51,7 @@ dependencies. Please make sure this process is as straightforward as possible!
 Please write your solution in a language you feel confident in, provided there
 is an easy option to build it and run it on macOS/Linux.
 
-Please take your time to come up with a solution you like. We appreciate people
-have day jobs and other commitments, so please let us know if you need more
-time!
+We appreciate people have day jobs and other commitments, so please let us know if you need more time!
 
 Please do not publish your solution, for example on your blog or source control
 site.

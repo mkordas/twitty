@@ -4,7 +4,7 @@
 - likes
 - reposts
 - hashtags
-- a link shortener
+- link shortener
 - content negotiation (JSON, XML, ...)
 - web hooks
 - search

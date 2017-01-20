@@ -27,6 +27,7 @@ they follow, in reverse chronological order.
 
 ## Details
 
+- provide some documentation for the API, so that we know how to use it!
 - don't care about registering users: a user is created as soon as they post
   their first message
 - don't care about user authentication
@@ -37,7 +38,7 @@ they follow, in reverse chronological order.
 Please submit your code as a ZIP archive or a tarball. We'll try to run your
 submission on a macOS or Linux machine. Please include a README with
 instructions on how to build and run your project, including any necessary
-dependencies.
+dependencies. Please make sure this process is as straightforward as possible!
 
 ## Tips
 
@@ -50,5 +51,3 @@ time!
 
 Please do not publish your solution, for example on your blog or source control
 site.
-
-

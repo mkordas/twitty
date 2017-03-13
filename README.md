@@ -37,6 +37,7 @@ they follow, in reverse chronological order.
 - don't care about registering users: a user is created as soon as they post
   their first message
 - don't care about user authentication
+- don't care about frontend, only backend
 - don't care about storage: storing everything in memory is fine
 
 ## Submitting

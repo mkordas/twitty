@@ -42,10 +42,7 @@ they follow, in reverse chronological order.
 
 ## Submitting
 
-Please submit your code as a ZIP archive or a tarball. We'll try to run your
-submission on a macOS or Linux machine. Please include a README with
-instructions on how to build and run your project, including any necessary
-dependencies. Please make sure this process is as straightforward as possible!
+Place your code on https://github.com.
 
 ## Tips
 

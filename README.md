@@ -33,6 +33,7 @@ they follow, in reverse chronological order.
 
 ## Details
 
+- use JAVA
 - provide some documentation for the API, so that we know how to use it!
 - don't care about registering users: a user is created as soon as they post
   their first message

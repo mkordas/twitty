@@ -47,8 +47,7 @@ Place your code on https://github.com.
 
 ## Tips
 
-Please write your solution in a language you feel confident in, provided there
-is an easy option to build it and run it on macOS/Linux.
+Please write your solution provided an easy option to build it and run it on macOS/windows.
 
 We appreciate people have day jobs and other commitments, so please let us know if you need more time!
 

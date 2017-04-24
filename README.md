@@ -51,5 +51,4 @@ Please write your solution provided an easy option to build it and run it on mac
 
 We appreciate people have day jobs and other commitments, so please let us know if you need more time!
 
-Please do not publish your solution, for example on your blog or source control
-site.
+Please do not publish your solution, for example on your blog.

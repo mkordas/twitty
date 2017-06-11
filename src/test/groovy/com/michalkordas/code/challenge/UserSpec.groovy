@@ -12,15 +12,16 @@ class UserSpec extends Specification {
         new User(sampleName).name() == sampleName
     }
 
-    def "can post a message"() {
+    def "can post a message on a wall"() {
         given:
         User user = new User("User")
+        String message = "some short message"
 
         when:
-        user.postMessage("some short message")
+        user.postMessage(message)
 
         then:
-        noExceptionThrown()
+        user.wall().messages().first() == message
     }
 
     def "cannot post message longer than 140 chars"() {

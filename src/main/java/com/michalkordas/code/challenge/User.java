@@ -10,4 +10,7 @@ class User {
     String name() {
         return name;
     }
+
+    void postMessage(String message) {
+    }
 }

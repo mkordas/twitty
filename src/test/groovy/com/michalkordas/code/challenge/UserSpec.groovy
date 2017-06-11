@@ -9,6 +9,6 @@ class UserSpec extends Specification {
         String sampleName = "Name"
 
         expect:
-        new User(sampleName).name = sampleName
+        new User(sampleName).name() == sampleName
     }
 }

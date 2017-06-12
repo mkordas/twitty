@@ -43,4 +43,18 @@ class UserSpec extends Specification {
         then:
         noExceptionThrown()
     }
+
+    def "can see timeline"() {
+        given:
+        User user = new User('Me')
+        User friend = new User('Friend')
+        user.follow(friend)
+        String message = 'any message'
+
+        when:
+        friend.postMessage(message)
+
+        then:
+        user.timeline().messages().first() == message
+    }
 }

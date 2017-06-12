@@ -5,14 +5,14 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 class Timeline {
-    private final List<User> following;
+    private final List<User> followedUsers;
 
-    Timeline(List<User> following) {
-        this.following = ImmutableList.copyOf(following);
+    Timeline(List<User> followedUsers) {
+        this.followedUsers = ImmutableList.copyOf(followedUsers);
     }
 
     List<String> messages() {
-        return following
+        return followedUsers
             .stream()
             .flatMap(user -> user.wall().messages().stream())
             .collect(Collectors.toList());

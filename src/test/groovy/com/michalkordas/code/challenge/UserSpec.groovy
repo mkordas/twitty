@@ -26,10 +26,21 @@ class UserSpec extends Specification {
 
     def "cannot post message longer than 140 chars"() {
         when:
-        new User("Talkative").postMessage("." * 141)
+        new User('Talkative').postMessage("." * 141)
 
         then:
         IllegalArgumentException ex = thrown()
-        ex.message == "You cannot post message over 140 chars"
+        ex.message == 'You cannot post message over 140 chars'
+    }
+
+    def "can follow another user"() {
+        given:
+        User user = new User('First')
+
+        when:
+        user.follow(new User('Second'))
+
+        then:
+        noExceptionThrown()
     }
 }

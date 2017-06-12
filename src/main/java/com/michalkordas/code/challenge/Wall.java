@@ -1,5 +1,6 @@
 package com.michalkordas.code.challenge;
 
+import com.google.common.collect.Lists;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +12,6 @@ class Wall {
     }
 
     List<String> messages() {
-        return messages;
+        return Lists.reverse(messages);
     }
 }

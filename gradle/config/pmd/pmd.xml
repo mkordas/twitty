@@ -48,6 +48,7 @@
     <rule ref="rulesets/java/comments.xml">
         <exclude name="CommentRequired"/>
         <exclude name="CommentSize"/>
+        <exclude name="CommentDefaultAccessModifier"/>
     </rule>
 
     <!-- Controversial (https://pmd.github.io/latest/pmd-java/rules/java/controversial.html) -->
@@ -59,6 +60,7 @@
         <exclude name="CallSuperInConstructor"/>
         <exclude name="OnlyOneReturn"/> <!-- disabled in favour of checkstyle ReturnCount check -->
         <exclude name="NullAssignment"/> <!-- disabled due to false positive for initialization with ternary operator -->
+        <exclude name="DefaultPackage"/>
     </rule>
 
     <!-- Coupling (https://pmd.github.io/latest/pmd-java/rules/java/coupling.html) -->
@@ -139,11 +141,13 @@
         <exclude name="LongVariable"/>
         <exclude name="ShortMethodName"/>
         <exclude name="AbstractNaming"/>
+        <exclude name="AvoidFieldNameMatchingMethodName"/>
     </rule>
 
     <!-- Optimization (https://pmd.github.io/latest/pmd-java/rules/java/optimizations.html) -->
     <rule ref="rulesets/java/optimizations.xml">
         <exclude name="LocalVariableCouldBeFinal"/>
+        <exclude name="MethodArgumentCouldBeFinal"/>
     </rule>
 
     <!-- Strict Exceptions (https://pmd.github.io/latest/pmd-java/rules/java/strictexception.html) -->

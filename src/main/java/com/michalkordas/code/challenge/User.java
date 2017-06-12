@@ -23,7 +23,10 @@ class User {
         wall.add(message);
     }
 
-    public Wall wall() {
+    Wall wall() {
         return wall;
+    }
+
+    void follow(User user) {
     }
 }

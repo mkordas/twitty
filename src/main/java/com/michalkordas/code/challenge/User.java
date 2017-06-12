@@ -1,9 +1,13 @@
 package com.michalkordas.code.challenge;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class User {
     private static final int MAX_MESSAGE_LENGTH = 140;
 
     private final Wall wall = new Wall();
+    private final List<User> following = new ArrayList<>();
     private final String name;
 
     User(String name) {
@@ -28,5 +32,10 @@ class User {
     }
 
     void follow(User user) {
+        following.add(user);
+    }
+
+    Timeline timeline() {
+        return new Timeline(following);
     }
 }

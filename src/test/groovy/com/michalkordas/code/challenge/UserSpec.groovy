@@ -44,7 +44,7 @@ class UserSpec extends Specification {
         noExceptionThrown()
     }
 
-    def "can see timeline"() {
+    def "can see a timeline"() {
         given:
         User user = new User('Me')
         User friend = new User('Friend')

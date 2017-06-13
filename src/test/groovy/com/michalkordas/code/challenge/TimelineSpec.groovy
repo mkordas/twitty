@@ -18,6 +18,6 @@ class TimelineSpec extends Specification {
         secondUser.postMessage(thirdMessage)
 
         expect:
-        timeline.messages() == [firstMessage, secondMessage, thirdMessage]
+        timeline.messages() == [thirdMessage, secondMessage, firstMessage]
     }
 }

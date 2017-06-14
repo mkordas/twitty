@@ -1,8 +1,8 @@
-package com.michalkordas.code.challenge;
+package com.michalkordas.twitty;
 
-import com.michalkordas.code.challenge.domain.Timeline;
-import com.michalkordas.code.challenge.domain.User;
-import com.michalkordas.code.challenge.domain.Wall;
+import com.michalkordas.twitty.domain.Timeline;
+import com.michalkordas.twitty.domain.User;
+import com.michalkordas.twitty.domain.Wall;
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.web.bind.annotation.PathVariable;

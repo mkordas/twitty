@@ -1,4 +1,4 @@
-package com.michalkordas.code.challenge.domain
+package com.michalkordas.twitty.domain
 
 import com.michalkordas.code.challenge.domain.Timeline
 import com.michalkordas.code.challenge.domain.User

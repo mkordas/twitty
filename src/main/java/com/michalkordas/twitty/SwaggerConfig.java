@@ -1,4 +1,4 @@
-package com.michalkordas.code.challenge;
+package com.michalkordas.twitty;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.michalkordas.code.challenge.domain;
+package com.michalkordas.twitty.domain;
 
 import com.google.common.collect.ImmutableList;
 import java.util.List;

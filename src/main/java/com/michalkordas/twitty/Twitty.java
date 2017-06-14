@@ -1,4 +1,4 @@
-package com.michalkordas.code.challenge;
+package com.michalkordas.twitty;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

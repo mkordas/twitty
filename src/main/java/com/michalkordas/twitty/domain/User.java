@@ -1,4 +1,4 @@
-package com.michalkordas.code.challenge.domain;
+package com.michalkordas.twitty.domain;
 
 import java.util.ArrayList;
 import java.util.List;

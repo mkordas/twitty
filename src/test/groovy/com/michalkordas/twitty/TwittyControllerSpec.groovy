@@ -1,4 +1,4 @@
-package com.michalkordas.code.challenge
+package com.michalkordas.twitty
 
 import groovy.json.JsonSlurper
 import org.springframework.beans.factory.annotation.Autowired

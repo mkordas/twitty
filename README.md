@@ -11,5 +11,5 @@ Refer to documentation for supported REST operations.
 
 ## Documentation
 
-When application is running open [http://localhost:8080/swagger-ui.html].
+When application is running open [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
 

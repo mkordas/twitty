@@ -20,6 +20,11 @@ public class Controller {
         retrieveUser(user).postMessage(contents);
     }
 
+    @RequestMapping(value = "/{user}/follow", method = POST)
+    public void follow(@PathVariable("user") String user, @RequestBody String contents) {
+        retrieveUser(user).follow(retrieveUser(contents));
+    }
+
     @RequestMapping(value = "/{user}/wall", method = GET)
     public Wall wall(@PathVariable("user") String user) {
         return retrieveUser(user).wall();

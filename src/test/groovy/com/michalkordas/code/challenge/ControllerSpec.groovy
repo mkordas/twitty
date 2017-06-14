@@ -47,6 +47,19 @@ class ControllerSpec extends Specification {
         json(response).messages == []
     }
 
+    def "returns a timeline for a user"() {
+        given:
+        String aliceMessage = 'Alice message'
+        perform(post('/alice/message').content(aliceMessage))
+        perform(post('/anna/follow').content('alice'))
+
+        when:
+        def response = perform(get('/anna/timeline'))
+
+        then:
+        json(response).messages == [aliceMessage]
+    }
+
     private perform(MockHttpServletRequestBuilder request) {
         mvc.perform(request).andReturn().response
     }

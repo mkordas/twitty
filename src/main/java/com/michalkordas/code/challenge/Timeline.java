@@ -16,9 +16,9 @@ class Timeline {
     List<String> messages() {
         return followedUsers
             .stream()
-            .flatMap(user -> user.wall().messages().stream())
+            .flatMap(user -> user.wall().getMessages().stream())
             .sorted(comparing(Message::creationTimestamp).reversed())
-            .map(Message::contents)
+            .map(Message::getContents)
             .collect(Collectors.toList());
     }
 }

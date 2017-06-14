@@ -9,7 +9,7 @@ class Message {
         this.contents = contents;
     }
 
-    String contents() {
+    public String getContents() {
         return contents;
     }
 

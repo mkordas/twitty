@@ -11,7 +11,7 @@ class Wall {
         messages.add(new Message(message));
     }
 
-    List<Message> messages() {
+    public List<Message> getMessages() {
         return Lists.reverse(messages);
     }
 }

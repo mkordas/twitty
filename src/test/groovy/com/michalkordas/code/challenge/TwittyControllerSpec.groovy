@@ -14,7 +14,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class CodeChallengeControllerSpec extends Specification {
+class TwittyControllerSpec extends Specification {
 
     @Autowired
     private MockMvc mvc

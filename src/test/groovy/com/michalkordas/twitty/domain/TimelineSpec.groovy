@@ -1,7 +1,7 @@
 package com.michalkordas.twitty.domain
 
-import com.michalkordas.code.challenge.domain.Timeline
-import com.michalkordas.code.challenge.domain.User
+import com.michalkordas.twitty.domain.Timeline
+import com.michalkordas.twitty.domain.User
 import spock.lang.Specification
 
 class TimelineSpec extends Specification {

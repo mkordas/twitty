@@ -1,6 +1,6 @@
 package com.michalkordas.twitty.domain
 
-import com.michalkordas.code.challenge.domain.Wall
+import com.michalkordas.twitty.domain.Wall
 import spock.lang.Specification
 
 class WallSpec extends Specification {

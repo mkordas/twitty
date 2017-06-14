@@ -15,6 +15,6 @@ class WallSpec extends Specification {
         wall.add(second)
 
         then:
-        wall.messages() == [second, first]
+        wall.messages().collect { it.contents() } == [second, first]
     }
 }

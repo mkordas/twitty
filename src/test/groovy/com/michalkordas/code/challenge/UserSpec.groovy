@@ -21,7 +21,7 @@ class UserSpec extends Specification {
         user.postMessage(message)
 
         then:
-        user.wall().messages().first() == message
+        user.wall().messages().first().contents() == message
     }
 
     def "cannot post message longer than 140 chars"() {

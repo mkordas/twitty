@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Wall {
-    private final List<String> messages = new ArrayList<>();
+    private final List<Message> messages = new ArrayList<>();
 
     void add(String message) {
-        messages.add(message);
+        messages.add(new Message(message));
     }
 
-    List<String> messages() {
+    List<Message> messages() {
         return Lists.reverse(messages);
     }
 }

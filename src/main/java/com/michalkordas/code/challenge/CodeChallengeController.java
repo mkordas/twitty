@@ -16,13 +16,19 @@ public class CodeChallengeController {
     private final Map<String, User> users = new HashMap<>();
 
     @RequestMapping(value = "/{user}/message", method = POST)
-    public void message(@PathVariable("user") String user, @RequestBody String contents) {
+    public void message(
+        @PathVariable("user") String user,
+        @RequestBody String contents
+    ) {
         retrieveUser(user).postMessage(contents);
     }
 
     @RequestMapping(value = "/{user}/follow", method = POST)
-    public void follow(@PathVariable("user") String user, @RequestBody String contents) {
-        retrieveUser(user).follow(retrieveUser(contents));
+    public void follow(
+        @PathVariable("user") String user,
+        @RequestBody String userToFollow
+    ) {
+        retrieveUser(user).follow(retrieveUser(userToFollow));
     }
 
     @RequestMapping(value = "/{user}/wall", method = GET)

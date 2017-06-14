@@ -1,5 +1,7 @@
-package com.michalkordas.code.challenge
+package com.michalkordas.code.challenge.domain
 
+import com.michalkordas.code.challenge.domain.Timeline
+import com.michalkordas.code.challenge.domain.User
 import spock.lang.Specification
 
 class TimelineSpec extends Specification {

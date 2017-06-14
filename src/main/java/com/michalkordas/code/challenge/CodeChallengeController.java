@@ -1,5 +1,8 @@
 package com.michalkordas.code.challenge;
 
+import com.michalkordas.code.challenge.domain.Timeline;
+import com.michalkordas.code.challenge.domain.User;
+import com.michalkordas.code.challenge.domain.Wall;
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.web.bind.annotation.PathVariable;

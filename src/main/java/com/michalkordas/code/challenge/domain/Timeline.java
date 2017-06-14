@@ -1,4 +1,4 @@
-package com.michalkordas.code.challenge;
+package com.michalkordas.code.challenge.domain;
 
 import com.google.common.collect.ImmutableList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 import static java.util.Comparator.comparing;
 
-class Timeline {
+public class Timeline {
     private final List<User> followedUsers;
 
     Timeline(List<User> followedUsers) {

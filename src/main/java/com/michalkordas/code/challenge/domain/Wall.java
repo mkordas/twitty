@@ -1,10 +1,10 @@
-package com.michalkordas.code.challenge;
+package com.michalkordas.code.challenge.domain;
 
 import com.google.common.collect.Lists;
 import java.util.ArrayList;
 import java.util.List;
 
-class Wall {
+public class Wall {
     private final List<Message> messages = new ArrayList<>();
 
     void add(String message) {

@@ -1,4 +1,4 @@
-package com.michalkordas.code.challenge;
+package com.michalkordas.code.challenge.domain;
 
 class Message {
 

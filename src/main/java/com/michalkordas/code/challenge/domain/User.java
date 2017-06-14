@@ -1,16 +1,16 @@
-package com.michalkordas.code.challenge;
+package com.michalkordas.code.challenge.domain;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class User {
+public class User {
     private static final int MAX_MESSAGE_LENGTH = 140;
 
     private final Wall wall = new Wall();
     private final List<User> following = new ArrayList<>();
     private final String name;
 
-    User(String name) {
+    public User(String name) {
         this.name = name;
     }
 
@@ -18,7 +18,7 @@ class User {
         return name;
     }
 
-    void postMessage(String message) {
+    public void postMessage(String message) {
         if (message.length() > MAX_MESSAGE_LENGTH) {
             throw new IllegalArgumentException(
                 "You cannot post message over 140 chars"
@@ -27,15 +27,15 @@ class User {
         wall.add(message);
     }
 
-    Wall wall() {
+    public Wall wall() {
         return wall;
     }
 
-    void follow(User user) {
+    public void follow(User user) {
         following.add(user);
     }
 
-    Timeline timeline() {
+    public Timeline timeline() {
         return new Timeline(following);
     }
 }

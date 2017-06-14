@@ -1,5 +1,6 @@
-package com.michalkordas.code.challenge
+package com.michalkordas.code.challenge.domain
 
+import com.michalkordas.code.challenge.domain.Wall
 import spock.lang.Specification
 
 class WallSpec extends Specification {

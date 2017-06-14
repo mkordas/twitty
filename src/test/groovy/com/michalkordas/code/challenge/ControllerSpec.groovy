@@ -60,6 +60,25 @@ class ControllerSpec extends Specification {
         json(response).messages == [aliceMessage]
     }
 
+    def "returns a complex timeline only for followed users"() {
+        given:
+        String kateMessage = 'Kate message'
+        String patrickMessage = 'Patrick message'
+        perform(post('/tom/follow').content('kate'))
+        perform(post('/tom/follow').content('patrick'))
+        perform(post('/patrick/message').content(patrickMessage))
+        perform(post('/kate/message').content(kateMessage))
+        perform(post('/tom/message').content('Tom message'))
+        perform(post('/non-followed-user/message')
+                .content('any message'))
+
+        when:
+        def response = perform(get('/tom/timeline'))
+
+        then:
+        json(response).messages == [kateMessage, patrickMessage]
+    }
+
     private perform(MockHttpServletRequestBuilder request) {
         mvc.perform(request).andReturn().response
     }

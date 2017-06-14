@@ -55,6 +55,6 @@ class UserSpec extends Specification {
         friend.postMessage(message)
 
         then:
-        user.timeline().messages().first() == message
+        user.timeline().getMessages().first() == message
     }
 }

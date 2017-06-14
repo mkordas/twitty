@@ -13,7 +13,7 @@ class Timeline {
         this.followedUsers = ImmutableList.copyOf(followedUsers);
     }
 
-    List<String> messages() {
+    public List<String> getMessages() {
         return followedUsers
             .stream()
             .flatMap(user -> user.wall().getMessages().stream())

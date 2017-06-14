@@ -39,6 +39,14 @@ class ControllerSpec extends Specification {
         json(response).messages == [[contents: message]]
     }
 
+    def "returns an empty timeline for a user not following anyone"() {
+        when:
+        def response = perform(get('/anna/timeline'))
+
+        then:
+        json(response).messages == []
+    }
+
     private perform(MockHttpServletRequestBuilder request) {
         mvc.perform(request).andReturn().response
     }
